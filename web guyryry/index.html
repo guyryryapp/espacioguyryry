@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Conoce Guyryry y encuentra nuestros datos de contacto en Itá, Paraguay."
+    >
+    <meta name="theme-color" content="#ff3035">
+    <title>Guyryry | Contacto</title>
+    <link rel="icon" href="GUYRYRY_LOGO_ICONO_APP_Rojo.png" type="image/png">
+    <style>
+      :root {
+        color-scheme: light;
+        --brand-red: #f4313b;
+        --brand-red-dark: #c91f2d;
+        --brand-blush: #fff0ef;
+        --brand-border: #f2cbc8;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #242424;
+        background: #fffaf9;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--brand-red-dark);
+        outline-offset: 4px;
+      }
+
+      .brand {
+        display: flex;
+        min-height: 184px;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(16px, 3vw, 30px);
+        padding: 18px 24px;
+        background: var(--brand-red);
+        color: #fff;
+      }
+
+      .brand img {
+        width: clamp(96px, 16vw, 144px);
+        height: clamp(96px, 16vw, 144px);
+        border: 8px solid #fff;
+        border-radius: 18px;
+        object-fit: cover;
+      }
+
+      .brand h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 8vw, 4rem);
+        font-weight: 750;
+        letter-spacing: 0.035em;
+      }
+
+      .brand-copy p {
+        margin: 4px 0 0;
+        color: rgb(255 255 255 / 90%);
+        font-size: clamp(1rem, 3vw, 1.4rem);
+        letter-spacing: 0.04em;
+      }
+
+      .navigation {
+        display: flex;
+        min-height: 64px;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(36px, 14vw, 150px);
+        padding: 12px 20px;
+        background: #fffaf9;
+      }
+
+      .navigation a {
+        padding: 8px 12px;
+        border-radius: 3px;
+        color: var(--brand-red-dark);
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .navigation a:hover {
+        background: var(--brand-blush);
+      }
+
+      .deletion {
+        padding: 8px 24px 48px;
+      }
+
+      .deletion-card {
+        width: min(100%, 720px);
+        margin: 0 auto;
+        padding: clamp(24px, 5vw, 40px);
+        border: 1px solid var(--brand-border);
+        border-left: 5px solid var(--brand-red);
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 8px 28px rgb(201 31 45 / 8%);
+      }
+
+      .deletion-card h2 {
+        margin: 0 0 12px;
+        color: var(--brand-red-dark);
+        font-size: clamp(1.25rem, 4vw, 1.6rem);
+      }
+
+      .deletion-card > p {
+        margin: 0 0 20px;
+        line-height: 1.6;
+      }
+
+      .deletion-form {
+        display: grid;
+        justify-items: start;
+        gap: 18px;
+      }
+
+      .deletion-confirmation {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        line-height: 1.55;
+      }
+
+      .deletion-confirmation input {
+        width: 18px;
+        height: 18px;
+        flex: 0 0 auto;
+        margin: 2px 0 0;
+        accent-color: var(--brand-red);
+      }
+
+      .deletion-form button {
+        padding: 12px 20px;
+        border: 0;
+        border-radius: 6px;
+        background: var(--brand-red);
+        color: #fff;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .deletion-form button:hover {
+        background: var(--brand-red-dark);
+      }
+
+      .deletion-form button:focus-visible {
+        outline: 3px solid var(--brand-red-dark);
+        outline-offset: 3px;
+      }
+
+      .intro {
+        padding: 22px 24px;
+        background: var(--brand-blush);
+        text-align: center;
+      }
+
+      .intro img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 8px;
+        object-fit: contain;
+      }
+
+      .intro p {
+        max-width: 850px;
+        margin: 0 auto;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      .contact {
+        padding: 48px 24px;
+      }
+
+      .contact-card {
+        width: min(100%, 560px);
+        margin: 0 auto;
+        padding: 28px clamp(22px, 8vw, 72px);
+        border: 1px solid var(--brand-border);
+        border-left: 5px solid var(--brand-red);
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 8px 28px rgb(201 31 45 / 8%);
+      }
+
+      .contact-card h2 {
+        margin: 0 0 20px;
+        color: var(--brand-red-dark);
+        font-size: 1.35rem;
+      }
+
+      .contact-card p {
+        margin: 14px 0;
+        line-height: 1.5;
+      }
+
+      .contact-card strong {
+        display: inline-block;
+        min-width: 92px;
+      }
+
+      .contact-card a {
+        color: var(--brand-red-dark);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .terms-content {
+        margin-top: 20px;
+        padding: clamp(20px, 5vw, 36px);
+        border: 1px solid var(--brand-border);
+        border-radius: 12px;
+        background: var(--brand-blush);
+        line-height: 1.7;
+      }
+
+      .footer-terms:not([open]) > .terms-content {
+        display: none;
+      }
+
+      .terms-content h3 {
+        margin-bottom: 4px;
+        color: var(--brand-red-dark);
+        font-size: 1.05rem;
+      }
+
+      .terms-content p {
+        margin-top: 6px;
+      }
+
+      .terms-content a {
+        color: var(--brand-red-dark);
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        min-height: 126px;
+        align-items: stretch;
+        justify-content: center;
+        gap: 16px;
+        padding: 24px max(24px, calc((100% - 900px) / 2));
+        background: #fff3f1;
+      }
+
+      footer p {
+        margin: 0;
+        line-height: 1.7;
+      }
+
+      .footer-links {
+        display: grid;
+        gap: 8px;
+        width: 100%;
+        padding-top: 14px;
+        border-top: 1px solid var(--brand-border);
+      }
+
+      .footer-links a {
+        color: var(--brand-red-dark);
+        text-decoration: none;
+      }
+
+      .footer-terms {
+        width: 100%;
+        color: var(--brand-red-dark);
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      .footer-terms summary {
+        width: fit-content;
+        cursor: pointer;
+        text-underline-offset: 3px;
+      }
+
+      .footer-terms summary:hover {
+        text-decoration: underline;
+      }
+
+      .footer-terms summary:focus-visible {
+        outline: 3px solid var(--brand-red-dark);
+        outline-offset: 4px;
+      }
+
+      .footer-terms summary::marker {
+        color: var(--brand-red);
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      @media (max-width: 520px) {
+        .brand {
+          min-height: 144px;
+        }
+
+        .brand-copy h1 {
+          font-size: clamp(2rem, 9vw, 2.8rem);
+        }
+
+        .navigation {
+          justify-content: space-around;
+          gap: 8px;
+        }
+
+        .navigation a {
+          padding: 8px 6px;
+          font-size: 0.9rem;
+        }
+
+        .contact {
+          padding: 36px 18px;
+        }
+
+        .contact-card {
+          padding: 24px 20px;
+        }
+
+        .contact-card strong {
+          display: block;
+          margin-bottom: 3px;
+        }
+
+        footer {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <img src="GUYRYRY_LOGO_ICONO_APP_Rojo.png" alt="Logo de Guyryry">
+        <div class="brand-copy">
+          <h1>Guyryry</h1>
+          <p>Espacio Guyryry</p>
+        </div>
+      </div>
+      <nav class="navigation" aria-label="Navegación principal">
+        <a href="#somos">Somos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#eliminar-cuenta">Eliminar Cuenta</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" id="somos" aria-label="Sobre Guyryry">
+        <img src="logo_hablando_transparente.gif" alt="Emblema de Guyryry">
+        <p>
+          Un espacio para liberar tu creatividad, expresar con tu propia voz y
+          conocer personas que vibran en tu misma frecuencia. Olvídate de los
+          textos largos: aquí nos comunicamos con loops visuales, audio y pulsos
+          que expresan.
+        </p>
+      </section>
+
+      <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-card">
+          <h2 id="contact-title">Estamos para ayudarte</h2>
+          <p>
+            <strong>Contacto:</strong>
+            <a href="tel:+595971673029">+595 971 673 029</a>
+          </p>
+          <p>
+            <strong>Correo:</strong>
+            <a href="mailto:correosguyryry@gmail.com">correosguyryry@gmail.com</a>
+          </p>
+          <p><strong>Dirección:</strong> Itá, Paraguay</p>
+        </div>
+      </section>
+
+      <section
+        class="deletion"
+        id="eliminar-cuenta"
+        aria-labelledby="deletion-title"
+      >
+        <div class="deletion-card">
+          <h2 id="deletion-title">Solicitud de eliminación de cuenta y datos</h2>
+          <p>
+            Antes de continuar, confirma que comprendes que la eliminación es
+            permanente.
+          </p>
+          <form
+            class="deletion-form"
+            action="https://guyryryapp.web.app/"
+            method="get"
+          >
+            <label class="deletion-confirmation">
+              <input type="checkbox" required>
+              <span>Entiendo que esta acción es permanente y eliminará todos mis datos.</span>
+            </label>
+            <button type="submit">Continuar a la solicitud</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <details class="footer-terms" id="terminos">
+        <summary>Términos y Condiciones</summary>
+        <div class="terms-content">
+          <p>
+            Estos términos describen las condiciones generales de uso de este
+            sitio web. Al navegar por sus páginas, aceptas utilizarlas de manera
+            responsable y conforme a las leyes aplicables.
+          </p>
+
+          <h3>Uso del sitio</h3>
+          <p>
+            La información de este sitio presenta a Espacio Guyryry y sus datos
+            de contacto. No uses el sitio para actividades ilegales, para
+            perjudicar a otras personas o para intentar afectar su funcionamiento.
+          </p>
+
+          <h3>Contenido y propiedad intelectual</h3>
+          <p>
+            Las marcas, logotipos, textos e imágenes de Guyryry pertenecen a sus
+            respectivos titulares. No los reproduzcas ni los uses con fines
+            comerciales sin autorización. Si compartes contenido, asegúrate de
+            tener derecho a hacerlo y de respetar los derechos de otras personas.
+          </p>
+
+          <h3>Disponibilidad e información</h3>
+          <p>
+            Procuramos mantener la información actualizada, pero puede cambiar
+            con el tiempo y el sitio podría no estar disponible temporalmente.
+            Para confirmar cualquier dato, comunícate con nosotros.
+          </p>
+
+          <h3>Cambios y contacto</h3>
+          <p>
+            Estos términos pueden actualizarse; la versión vigente estará
+            publicada en esta página. Si tienes consultas, escríbenos a
+            <a href="mailto:correosguyryry@gmail.com">correosguyryry@gmail.com</a>
+            o llámanos al <a href="tel:+595971673029">+595 971 673 029</a>.
+          </p>
+        </div>
+      </details>
+      <div class="footer-links">
+        <a href="#contacto">Dirección: Itá - Paraguay</a>
+        <p>© <span id="year">2026</span> Guyryry. Derechos Reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
